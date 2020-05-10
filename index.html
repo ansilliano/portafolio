@@ -9,64 +9,59 @@
 
 </head>
 <body>
-  <header>
+  <header class="header">
     <div>
-      <figure>
+      <figure class="logo">
         <img src="imagenes/logoans2.png" height="50" alt="Logo de Angela Illiano">
       </figure>
-      <nav>
+      <nav class="menu">
         <ol> 
           <li>
-            <a href="#portafolio">Portafolio</a>
+            <a class="link" href="#portafolio">Portafolio</a>
           </li>
           <li>
-            <a href="#experiencia">Experiencia</a>
+            <a class="link" href="#experiencia">Experiencia</a>
           </li>
           <li>
-            <a href="#contacto" target="_blank">Trabajemos juntos</a>
+            <a class="link" href="#contacto">Trabajemos juntos</a>
           </li>
         </ol>
       </nav>
     </div>
   </header>
-  <section>
+  <section class="hero">
     <h1>
       ¡Hola! soy Angela Illiano.<br>Soy arquitecta y me encanta la <strong>ilustración</strong>.<br>Actualmente estoy aprendiendo sobre<br><strong>desarrollo web</strong> y <strong>diseño de interfaces</strong>. 
     </h1>
     <img src="imagenes/imgprincipal.jpg" width="500" alt="imagen principal del sitio">
   </section>
-  <section id="portafolio">
+  <section id="portafolio" class="portfolio">
     <h2>Portafolio (proyectos destacados)</h2>
-    <article>
-      <h3>
-        Título de un proyecto
-      </h3>
-      <h6>
-        Autocad
-        Illustrator
-        Photoshop
-        Sketchup
-      </h6>
-      <p>
-        <small><strong>Fecha:</strong> 01/01/2010</small>
-      </p>
+    <article class="project">
+      <h3 class="project-title">Título de un proyecto</h3>
+      <h6 class="project-tools">Autocad | Illustrator | Photoshop | Sketchup</h6>
+      <p class="project-date"><small><strong>Fecha:</strong> 01/01/2010</small></p>
+      <button class="project-button">Ver más</button>
       <p>Acá colocamos un párrafo que explique un poco el proyecto. Un resumen
       </p>
-      <img src="imagenes/fabricadechocolate.jpg" width="500" alt="imagen de maqueta de la fábrica de chocolate">
+      <figure class="project-imageContainer">
+        <img class="project-image" src="imagenes/fabricadechocolate.jpg" width="500" alt="imagen de maqueta de la fábrica de chocolate">
+      </figure>
     </article>
   </section>
   <section id="experiencia">
     <h2>Más sobre mi Experiencia</h2>
-    <article>
-      <figure>
-        <img src="imagenes/windsurf.jpg" width="500" alt="experiencia windsurf">
+    <article class="experience">
+      <figure class="experience-imageContainer">
+        <img class="experience-image" src="imagenes/windsurf.jpg" width="500" alt="experiencia windsurf">
       </figure>
-      <p>Acá colocamos un párrafo que explique un poco más sobre mi experiencia. Un resumen</p>
-      <a href="">Ver más</a>
+      <h3 class="experience-title" >Título de esta experiencia</h3>
+      <p class="experience-description">Acá colocamos un párrafo que explique un poco más sobre mi experiencia. Un resumen</p>
+      <button class="experience button">Ver más</button>
     </article>
   </section>
-  <section id="contacto">
-    <form action="/suscripcion/">
+  <section id="contacto" class="contact">
+    <form action="/suscripcion/" class="form-email">
       <h3>¿Creamos algo juntos?</h3>
       <input type="email" placeholder="Déjame tu email">
       <button>
@@ -74,6 +69,6 @@
       </button>
     </form>
   </section>
-  <footer>footer</footer>
+  <footer class="footer">footer</footer>
 </body>
 </html>
