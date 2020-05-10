@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="estilos/estilos.css">
   <title>Angela Illiano</title>
+
 </head>
 <body>
   <header>
-    <nav>
-      <ol> 
-        <li>
-          <a>Portafolio</a>
-        </li>
-        <li>
-          <a>Experiencia</a>
-        </li>
-        <li>
-          <a>Trabajemos juntos</a>
-        </li>
-      </ol>
-    </nav>
+    <div>
+      <figure>
+        <img src="imagenes/logoans2.png" height="50" alt="Logo de Angela Illiano">
+      </figure>
+      <nav>
+        <ol> 
+          <li>
+            <a href="#portafolio">Portafolio</a>
+          </li>
+          <li>
+            <a href="#experiencia">Experiencia</a>
+          </li>
+          <li>
+            <a href="#contacto" target="_blank">Trabajemos juntos</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
   </header>
   <section>
     <h1>
       ¡Hola! soy Angela Illiano.<br>Soy arquitecta y me encanta la <strong>ilustración</strong>.<br>Actualmente estoy aprendiendo sobre<br><strong>desarrollo web</strong> y <strong>diseño de interfaces</strong>. 
-      <img src="" alt="imagen de portada">
     </h1>
+    <img src="imagenes/imgprincipal.jpg" width="500" alt="imagen principal del sitio">
   </section>
-  <section>
+  <section id="portafolio">
     <h2>Portafolio (proyectos destacados)</h2>
     <article>
       <h3>
@@ -44,19 +52,28 @@
       </p>
       <p>Acá colocamos un párrafo que explique un poco el proyecto. Un resumen
       </p>
+      <img src="imagenes/fabricadechocolate.jpg" width="500" alt="imagen de maqueta de la fábrica de chocolate">
     </article>
   </section>
-  <section>
+  <section id="experiencia">
     <h2>Más sobre mi Experiencia</h2>
     <article>
       <figure>
-        <img src="" alt="">
+        <img src="imagenes/windsurf.jpg" width="500" alt="experiencia windsurf">
       </figure>
       <p>Acá colocamos un párrafo que explique un poco más sobre mi experiencia. Un resumen</p>
       <a href="">Ver más</a>
     </article>
   </section>
-  <section>Sección de contactos</section>
+  <section id="contacto">
+    <form action="/suscripcion/">
+      <h3>¿Creamos algo juntos?</h3>
+      <input type="email" placeholder="Déjame tu email">
+      <button>
+        Enviar
+      </button>
+    </form>
+  </section>
   <footer>footer</footer>
 </body>
 </html>
