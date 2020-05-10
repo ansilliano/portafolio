@@ -1,4 +1,46 @@
-header{
+/* selector de etiqueta header - section - article - nav */
+
+/* header{
   background-color: gray;
+} */
+
+/* selector descendente
+body - header - div - nav - ol - li - a */
+
+/* selector de clase
+.link */
+
+/* selector de id 
+#portafolio */
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Jost', 'Montserrat', sans-serif;
+}
+
+h1{
+  line-height: 1.4;
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: -0.2px;
+  /* text-transform: unset; */
+  /* text-decoration: underline; */
+}
+
+.hero{
+  height: 300px;
+}
+
+.project-details{
+  width: 500px;
+
+}
+
+.project-imageContainer{
+  width: 500px;
 }
 
