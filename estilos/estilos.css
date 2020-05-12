@@ -262,7 +262,8 @@ ul {
   margin: 10px;
   /* margin-left: 30px; */
   margin-bottom: 20px;
-  width: 580px;
+  /* width: 580px; */
+  max-width: 45%;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
@@ -393,7 +394,7 @@ ul {
   height: 50px;
   /* border: 1px solid white; */
   color: rgb(56, 56, 56);
-  background-size: 50px;
+  background-size: 50px 50px;
   margin: 0 12px;
 }
 
