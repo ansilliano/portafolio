@@ -1,78 +1,249 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400&family=Muli&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilos/estilos.css">
-  <title>Angela Illiano</title>
-
-</head>
-<body>
-  <header class="header">
-    <div>
-      <figure class="logo">
-        <img src="imagenes/logoans4.png" height="50" alt="Logo de Angela Illiano">
-      </figure>
-      <nav class="menu">
-        <ol> 
-          <li>
-            <a class="link" href="#portafolio">Portafolio</a>
-          </li>
-          <li>
-            <a class="link" href="#experiencia">Experiencia</a>
-          </li>
-          <li>
-            <a class="link" href="#contacto">Trabajemos juntos</a>
-          </li>
-        </ol>
-      </nav>
-    </div>
-  </header>
-  <section class="hero">
-    <h1>
-      ¡Hola! soy Angela Illiano.<br>Soy <strong>arquitecta</strong> y me encanta la <strong>ilustración</strong><br>Actualmente estoy aprendiendo sobre<br><strong>desarrollo web</strong> y <strong>diseño de interfaces</strong>
-    </h1>
-    <!-- <img src="imagenes/imgprincipal.jpg" width="500" alt="imagen principal del sitio"> -->
-  </section>
-  <section id="portafolio" class="portfolio">
-    <h2>Portafolio (proyectos destacados)</h2>
-    <article class="project">
-      <div class="project-details">
-        <h3 class="project-title">Fábrica de Chocolate</h3>
-        <h5>Boleíta. Caracas - Venezuela</h5>
-        <h6 class="project-tools">Autocad | Illustrator | Photoshop | Sketchup</h6>
-        <p class="project-date"><small><strong>Fecha:</strong> Julio 2018</small></p>
-        <p>El objetivo era elaborar una propuesta con Denominación de Origen (Cacao de Paria) para el desarrollo de una fábrica de chocolate en la ciudad. Se buscaba la consolidación entre la actividad comercial con la producción Agro-Industrial cacaotera del país. Esta actividad cacaotera es considerada de abolengo regional y de tradición nacional, ya que el árbol de cacao es una planta tropical, apreciada en períodos prehispánicos como alimento de los dioses, moneda e incluso, evocadora de cierto poder místico.
-        </p>
-        <button class="project-button">Ver más</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400&family=Muli&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <title>Angela Illiano</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <figure class="logo">
+          <img
+            src="imagenes/logoans4.png"
+            height="40"
+            alt="Logo de Angela Illiano"
+          />
+        </figure>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a class="link" href="#portafolio">Portafolio</a>
+            </li>
+            <li>
+              <a class="link" href="#experiencia">Experiencia</a>
+            </li>
+            <li>
+              <a class="link" href="#contacto">Trabajemos juntos</a>
+            </li>
+          </ol>
+        </nav>
       </div>
-      <figure class="project-imageContainer">
-        <img class="project-image" src="imagenes/fabricadechocolate.jpg" width="500" alt="imagen de maqueta de la fábrica de chocolate">
-      </figure>
-    </article>
-  </section>
-  <section id="experiencia">
-    <h2>Más sobre mi Experiencia</h2>
-    <article class="experience">
-      <figure class="experience-imageContainer">
-        <img class="experience-image" src="imagenes/windsurf.jpg" width="500" alt="experiencia windsurf">
-      </figure>
-      <h3 class="experience-title" >Título de esta experiencia</h3>
-      <p class="experience-description">Acá colocamos un párrafo que explique un poco más sobre mi experiencia. Un resumen</p>
-      <button class="experience button">Ver más</button>
-    </article>
-  </section>
-  <section id="contacto" class="contact">
-    <form action="/suscripcion/" class="form-email">
-      <h3>¿Creamos algo juntos?</h3>
-      <input type="email" placeholder="Déjame tu email">
-      <button>
-        Enviar
-      </button>
-    </form>
-  </section>
-  <footer class="footer">footer</footer>
-</body>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h1>
+          ¡Hola! soy Angela Illiano.<br />Soy <strong>arquitecta</strong> y me
+          encanta la <strong>ilustración</strong><br />Actualmente estoy
+          aprendiendo sobre<br /><strong>desarrollo web</strong> y
+          <strong>diseño de interfaces</strong>
+        </h1>
+        <img class="hero-image" src="imagenes/imgprincipal.png" width="470" alt="imagen principal del sitio">
+      </div>
+    </section>
+    <section id="portafolio" class="portfolio">
+      <div class="container">
+        <h2>Portafolio (proyectos destacados)</h2>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Fábrica de Chocolate</h3>
+          <h5 class="project-location">Boleíta. Caracas - Venezuela</h5>
+          <h6 class="project-tools">
+            Autocad | Illustrator | Photoshop | Sketchup
+          </h6>
+          <p class="project-date">
+            <small><strong>Fecha:</strong> Julio 2018</small>
+          </p>
+          <p class="project-resume">
+            El objetivo era elaborar una propuesta con Denominación de Origen
+            (Cacao de Paria) para el desarrollo de una fábrica de chocolate en
+            la ciudad. Se buscaba la consolidación entre la actividad comercial
+            con la producción Agro-Industrial cacaotera del país. Esta actividad
+            cacaotera es considerada de abolengo regional y de tradición
+            nacional, ya que el árbol de cacao es una planta tropical, apreciada
+            en períodos prehispánicos como alimento de los dioses, moneda e
+            incluso, evocadora de cierto poder místico.
+          </p>
+          <button class="project-button">
+            <a href="https://ansilliano.pb.studio/proyectodegrado">Ver Más</a>
+          </button>
+        </div>
+        <figure class="project-imageContainer">
+          <img
+            class="project-image"
+            src="imagenes/fabrica.jpg"
+            width="500"
+            alt="imagen de maqueta de la fábrica de chocolate"
+          />
+        </figure>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Proyecto de Grado - Arquitectura</h3>
+          <h5 class="project-location">Petare. Caracas - Venezuela</h5>
+          <h6 class="project-tools">
+            Autocad | Illustrator | Photoshop | Sketchup
+          </h6>
+          <p class="project-date">
+            <small><strong>Fecha:</strong> Diciembre 2018</small>
+          </p>
+          <p class="project-resume">
+            Este trabajo surge como interés personal en mejorar las condiciones
+            de vida para las personas que nacen en lugares menos privilegiados,
+            lo que trae como consecuencia la limitación de oportunidades y que
+            por lo tanto sus probabilidades de pertenecer a alguna red
+            delincuencial se multipliquen. Esto se vincula a su vez con la
+            importancia que existe en la actualidad de tener espacios públicos
+            en nuestra ciudad. Caracas es una ciudad de contrastes, por lo que
+            es necesario crear espacios que promuevan la heterogeneidad entre
+            sus habitantes y así mejorar las condiciones de vida que actualmente
+            posee.
+          </p>
+          <button class="project-button">
+            <a href="https://ansilliano.pb.studio/proyectodegrado">Ver Más</a>
+          </button>
+        </div>
+        <figure class="project-imageContainer">
+          <img
+            class="project-image"
+            src="imagenes/esquemac.jpg"
+            width="500"
+            alt="imagen de maqueta de la fábrica de chocolate"
+          />
+        </figure>
+      </article>
+
+      </div>
+      
+    </section>
+    <div class="container">
+     <h2 class="experience-list-title">Más sobre mi Experiencia</h2>
+    </div>
+    <section id="experiencia" class="experience-list">
+      <div class="container">
+        <article class="experience">
+          <figure class="experience-imageContainer">
+            <img
+              class="experience-image"
+              src="imagenes/windsurf.jpg"
+              width="500"
+              alt="experiencia windsurf"
+            />
+          </figure>
+          <div class="experience-details">
+            <h3 class="experience-title">Club de Windsurf: Wissib</h3>
+            <p class="experience-description">
+              Agrupación deportiva universitaria. Dedicada a crear cursos de
+              windsurf principalmente en el Parque Nacional Morrocoy.
+              <br />
+              <p class="experience-location">Falcón - Venezuela</p>
+            </p>
+            <button class="experience-button">
+              <a href="#">Ver más</a>
+            </button>
+          </div>
+        </article>
+        <article class="experience">
+          <figure class="experience-imageContainer">
+            <img
+              class="experience-image"
+              src="imagenes/windsurf.jpg"
+              width="500"
+              alt="experiencia windsurf"
+            />
+          </figure>
+          <div class="experience-details">
+            <h3 class="experience-title">Club de Windsurf: Wissib</h3>
+            <p class="experience-description">
+              Agrupación deportiva universitaria. Dedicada a crear cursos de
+              windsurf principalmente en el Parque Nacional Morrocoy.
+              <br />
+              <p class="experience-location">Falcón - Venezuela</p>
+            </p>
+            <button class="experience-button">
+              <a href="#">Ver más</a>
+            </button>
+          </div>
+        </article>
+        <article class="experience">
+          <figure class="experience-imageContainer">
+            <img
+              class="experience-image"
+              src="imagenes/windsurf.jpg"
+              width="500"
+              alt="experiencia windsurf"
+            />
+          </figure>
+          <div class="experience-details">
+            <h3 class="experience-title">Club de Windsurf: Wissib</h3>
+            <p class="experience-description">
+              Agrupación deportiva universitaria. Dedicada a crear cursos de
+              windsurf principalmente en el Parque Nacional Morrocoy.
+              <br />
+              <p class="experience-location">Falcón - Venezuela</p>
+            </p>
+            <button class="experience-button">
+              <a href="#">Ver más</a>
+            </button>
+          </div>
+        </article>
+        <article class="experience">
+          <figure class="experience-imageContainer">
+            <img
+              class="experience-image"
+              src="imagenes/windsurf.jpg"
+              width="500"
+              alt="experiencia windsurf"
+            />
+          </figure>
+          <div class="experience-details">
+            <h3 class="experience-title">Club de Windsurf: Wissib</h3>
+            <p class="experience-description">
+              Agrupación deportiva universitaria. Dedicada a crear cursos de
+              windsurf principalmente en el Parque Nacional Morrocoy.
+              <br />
+              <p class="experience-location">Falcón - Venezuela</p>
+            </p>
+            <button class="experience-button">
+              <a href="#">Ver más</a>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="contacto" class="contact">
+      <div class="container">
+        <form action="/suscripcion/" class="form-email">
+          <h3>¿Creamos algo juntos?</h3>
+          <input type="email" placeholder="Déjame tu email" />
+         <button class="form-button">
+          Enviar
+          </button>
+        </form>
+        <div class="social">
+         <a href="https://twitter.com/AnsIlliano" class="social-link twitter"></a>
+         <a href="https://www.facebook.com/ansofill" class="social-link facebook"></a>
+         <a href="https://www.instagram.com/ansilliano/" class="social-link instagram"></a>
+         <a href="https://github.com/ansilliano" class="social-link github"></a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+         <p>
+          Curso de desarollo web online 2020
+          <img src="imagenes/logoplatzi.webp" alt="platzi logo" height="35px" />
+         </p>
+         <div>
+           <p>Designed with ♥ by Angela Illiano</p>
+         </div>
+      </div>
+    </footer>
+  </body>
 </html>
