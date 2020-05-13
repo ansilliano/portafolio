@@ -401,16 +401,16 @@ ul {
 }
 
 .social-link.twitter {
-  background-image: url(/imagenes/twitter.svg);
+  background-image: url(https://image.flaticon.com/icons/svg/733/733635.svg);
 }
 .social-link.facebook {
-  background-image: url(/imagenes/facebook.svg);
+  background-image: url(https://image.flaticon.com/icons/svg/1384/1384005.svg);
 }
 .social-link.instagram {
-  background-image: url(/imagenes/instagram.svg);
+  background-image: url(https://image.flaticon.com/icons/svg/1384/1384031.svg);
 }
 .social-link.github {
-  background-image: url(/imagenes/github.svg);
+  background-image: url(https://image.flaticon.com/icons/svg/2111/2111425.svg);
 }
 
 .footer {
