@@ -121,7 +121,7 @@ ul {
   /* border: 1px solid red; */
   max-width: 1000px;
   flex: 1;
-  margin: 0 auto;
+  margin: auto;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
@@ -343,6 +343,8 @@ ul {
 .form-email h3 {
   color: rgb(56, 56, 56);
   /* margin-left: 40px; */
+  font-size: 1.3em;
+  font-weight: 500;
 }
 
 .form-email input {
@@ -398,6 +400,9 @@ ul {
   margin: 0 12px;
 }
 
+.social-link.dribble {
+  background-image: url(https://image.flaticon.com/icons/svg/80/80798.svg);
+}
 .social-link.twitter {
   background-image: url(https://image.flaticon.com/icons/svg/733/733635.svg);
 }
@@ -477,6 +482,7 @@ ul {
   .project-title {
     font-size: 1.3em;
     text-align: initial;
+    margin-top: 0px;
   }
 
   .project-location,
@@ -511,8 +517,21 @@ ul {
     margin: 1.2em;
   }
 
+  .experience-image {
+    height: 240px;
+  }
+
   .experience-details {
     margin: -5em 1em 1em 1em;
+    margin-top: -5px;
+  }
+
+  .experience-list-title {
+    margin-left: 1.3em;
+    font-size: 1.2em;
+    /* font-family: "Montserrat"; */
+    /* text-align: center; */
+    font-weight: 500;
   }
 
   .experience-title {
@@ -534,6 +553,24 @@ ul {
     width: 90px;
     font-size: 0.7em;
   }
+
+  .form-email {
+    padding-left: 25px;
+  }
+
+  .social {
+    margin-right: 20px;
+  }
+
+  .footer-text {
+    margin-left: 25px;
+    font-size: 0.8em;
+  }
+
+  .footer div div {
+    margin-right: 25px;
+    font-size: 0.8em;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -543,12 +580,102 @@ ul {
 
   .experience-image {
     width: 100%;
+    height: 210px;
+  }
+
+  .project-title {
+    margin-top: -7px;
+  }
+
+  .contact {
+    height: auto;
+    padding: 1em;
+    text-align: center;
+    display: block;
+  }
+
+  .form-button {
+    display: initial;
+    height: 25px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .social {
+    padding: 30px 0 10px 0;
+    margin-right: initial;
+  }
+
+  .social-link {
+    width: 35px;
+    height: 35px;
+    background-size: 35px;
+  }
+
+  .form-email {
+    margin-right: initial;
+    padding-left: initial;
+  }
+
+  .footer {
+    text-align: center;
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 320px) {
+  .portfolio-h2 {
+    font-size: 1em;
+    /* margin-top: 1.2em;
+    margin-bottom: -0.4em; */
+    margin: 1.4em 1em 0em 1em;
+    text-align: center;
+  }
+
+  .project {
+    padding: 15px;
+  }
+
+  .project-title {
+    font-size: 1.1em;
+    text-align: initial;
+  }
+
+  .project-location,
+  .project-tools {
+    font-size: 0.6em;
+    text-align: initial;
+  }
+
+  .project-date {
+    font-size: 0.8em;
+    text-align: initial;
+  }
+
+  .project-resume {
+    font-size: 0.7em;
+    text-align: initial;
+  }
+
+  .project-button {
+    font-size: 0.65em;
+    width: 80px;
+  }
+
   .experience-details {
     margin: -5em 1em 1em 1em;
+  }
+
+  .experience-image {
+    height: 180px;
+  }
+
+  .experience-list-title {
+    font-size: 1em;
+    /* margin-top: 3em;
+    margin-bottom: -0.7em; */
+    text-align: center;
+    margin: 1.7em 1em -0.2em 1em;
   }
 
   .experience-title {
@@ -569,5 +696,26 @@ ul {
     height: 20px;
     width: 80px;
     font-size: 0.6em;
+  }
+
+  .social-link {
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+  }
+
+  .footer-text {
+    margin-left: initial;
+    margin-bottom: -5px;
+    font-size: 0.8em;
+  }
+
+  .footer img {
+    height: 20px;
+  }
+
+  .footer div div p {
+    margin-top: 20px;
+    margin-bottom: 15px;
   }
 }
