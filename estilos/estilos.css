@@ -26,18 +26,22 @@ h4,
 h5,
 h6 {
   font-family: "Jost", "Montserrat", sans-serif;
+  font-weight: normal;
 }
 
 h1 {
-  line-height: 1.4;
   font-size: 30px;
-  font-weight: normal;
+  line-height: 1.4;
   letter-spacing: 0.2px;
   color: white;
   margin: 0;
   /* margin-left: 20px; */
   /* text-transform: unset; */
   /* text-decoration: underline; */
+}
+
+h1 strong {
+  color: #fdb013;
 }
 
 h2 {
@@ -47,12 +51,8 @@ h2 {
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 30px;
-  margin-top: 0;
-  padding: 40px 0 0 0;
-}
-
-h1 strong {
-  color: #fdb013;
+  /* margin-top: 0; */
+  /* padding: 40px 0 0 0; */
 }
 
 .hero {
@@ -65,6 +65,7 @@ h1 strong {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .hero-image {
@@ -91,10 +92,11 @@ ul {
   background-color: rgb(56, 56, 56);
   color: white;
   display: flex;
-  justify-content: space-between;
   height: 70px;
   align-items: center;
-  box-shadow: 0px 8px 16px 5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 8px 16px 5px rgba(0, 0, 0, 0.2); */
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header ol {
@@ -117,7 +119,8 @@ ul {
 
 .container {
   /* border: 1px solid red; */
-  width: 80%;
+  max-width: 1000px;
+  flex: 1;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
@@ -144,26 +147,20 @@ ul {
 }
 
 .project {
-  /* border: tamaño tipo estilo */
-  /* border-top: 10px solid red;
-  border-right: 10px solid green;
-  border-left: 10px solid blue;
-  border-bottom: 10px solid pink; */
   border: 1px solid gray;
   border-radius: 10px;
-  /* margin: 10px; */
   margin-bottom: 20px;
   padding: 20px;
   background: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 8px 8px 16px 5px rgba(0, 0, 0, 0.2);
-  /* margin: 15px 20px; */
+  /* box-shadow: 8px 8px 16px 5px rgba(0, 0, 0, 0.2); */
+  flex-wrap: wrap;
 }
 
 .project-details {
-  width: 600px;
+  width: 50%;
   /* margin-left: 20px; */
 }
 
@@ -224,12 +221,12 @@ ul {
 }
 
 .project-imageContainer {
-  width: 500px;
-  /* margin-right: 20px; */
+  width: 50%;
 }
 
 .project-imageContainer img {
   border-radius: 5px;
+  max-width: 100%;
 }
 
 .menu {
@@ -261,11 +258,11 @@ ul {
 .experience {
   background-color: rgb(224, 224, 224);
   /* border: 1px solid red; */
-  margin: 10px;
+  margin: 1%;
   /* margin-left: 30px; */
   margin-bottom: 20px;
   /* width: 580px; */
-  max-width: 45%;
+  width: 48%;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
@@ -340,6 +337,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .form-email h3 {
@@ -419,8 +417,157 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer img {
   vertical-align: middle;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: block;
+    height: auto;
+  }
+
+  .header ol {
+    display: block;
+  }
+
+  .header ol li {
+    height: 50px;
+  }
+
+  .header a {
+    justify-content: center;
+  }
+
+  .header .logo {
+    text-align: center;
+  }
+
+  .portfolio-h2 {
+    margin-left: 1.3em;
+    font-size: 1.2em;
+    /* font-family: "Montserrat"; */
+    /* text-align: center; */
+    font-weight: 500;
+  }
+
+  .project {
+    display: block;
+    text-align: center;
+    margin: 1.5em;
+  }
+
+  .project-imageContainer {
+    width: auto;
+    text-align: center;
+  }
+
+  .project-details {
+    width: auto;
+    font-size: 16px;
+    /* text-align: initial; */
+  }
+
+  .project-title {
+    font-size: 1.3em;
+    text-align: initial;
+  }
+
+  .project-location,
+  .project-tools {
+    font-size: 0.7em;
+    text-align: initial;
+  }
+
+  .project-date {
+    font-size: 1em;
+    text-align: initial;
+  }
+
+  .project-resume {
+    font-size: 0.9em;
+    text-align: initial;
+  }
+
+  .project-button {
+    font-size: 0.8em;
+    width: 90px;
+  }
+
+  /* .experience {
+    margin: 1.2em;
+  } */
+  .experience-list-title {
+    margin-left: 24px;
+  }
+
+  .experience-list {
+    margin: 1.2em;
+  }
+
+  .experience-details {
+    margin: -5em 1em 1em 1em;
+  }
+
+  .experience-title {
+    font-size: 1.2em;
+  }
+
+  .experience-description {
+    font-size: 0.8em;
+  }
+
+  .experience-location {
+    font-size: 0.6em;
+  }
+
+  .experience-button {
+    margin-top: 20px;
+    margin-bottom: 0;
+    height: 20px;
+    width: 90px;
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .experience {
+    width: initial;
+  }
+
+  .experience-image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .experience-details {
+    margin: -5em 1em 1em 1em;
+  }
+
+  .experience-title {
+    font-size: 1em;
+  }
+
+  .experience-description {
+    font-size: 0.7em;
+  }
+
+  .experience-location {
+    font-size: 0.5em;
+  }
+
+  .experience-button {
+    margin-top: 20px;
+    margin-bottom: 0;
+    height: 20px;
+    width: 80px;
+    font-size: 0.6em;
+  }
 }

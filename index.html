@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400&family=Muli&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="estilos/estilos.css" />
-  <title>Angela Illiano</title>
-</head>
-<body>
-  <header class="header">
-    <div class="container-header">
-      <div class="container">
-        <figure class="logo">
-          <img src="https://i.imgur.com/u0eZPRc.png" height="40" alt="Logo de Angela Illiano" />
-        </figure>
-        <nav class="menu">
-          <ol>
-            <li>
-              <a class="link" href="#portafolio">Portafolio</a>
-            </li>
-            <li>
-              <a class="link" href="#experiencia">Experiencia</a>
-            </li>
-            <li>
-              <a class="link" href="#contacto">Trabajemos juntos</a>
-            </li>
-          </ol>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400&family=Muli&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <title>Angela Illiano</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-header">
+        <div class="container">
+          <figure class="logo">
+            <img
+              src="https://i.imgur.com/u0eZPRc.png"
+              height="40"
+              alt="Logo de Angela Illiano"
+            />
+          </figure>
+          <nav class="menu">
+            <ol>
+              <li>
+                <a class="link" href="#portafolio">Portafolio</a>
+              </li>
+              <li>
+                <a class="link" href="#experiencia">Experiencia</a>
+              </li>
+              <li>
+                <a class="link" href="#contacto">Trabajemos juntos</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
-  <section class="hero">
+    </header>
+    <!-- <section class="hero">
     <div class="container">
       <h1>
         ¡Hola! soy Angela Illiano.<br />Soy <strong>arquitecta</strong> y me
@@ -41,85 +46,93 @@
         aprendiendo sobre<br /><strong>desarrollo web</strong> y
         <strong>diseño de interfaces</strong>
       </h1>
-      <img class="hero-image" src="https://i.imgur.com/m1B2PFM.png" width="470" alt="imagen principal del sitio">
+      <img class="hero-image" src="https://i.imgur.com/m1B2PFM.png" width="450" alt="imagen principal del sitio">
     </div>
-  </section>
-  <section id="portafolio" class="portfolio">
+  </section> -->
+    <section id="portafolio" class="portfolio">
+      <div class="container">
+        <h2 class="portfolio-h2">Portafolio (Proyectos Destacados)</h2>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Fábrica de Chocolate</h3>
+            <h5 class="project-location">Boleíta. Caracas - Venezuela</h5>
+            <h6 class="project-tools">
+              Autocad | Illustrator | Photoshop | Sketchup
+            </h6>
+            <p class="project-date">
+              <small><strong>Fecha:</strong> Julio 2018</small>
+            </p>
+            <p class="project-resume">
+              El objetivo era elaborar una propuesta con Denominación de Origen
+              (Cacao de Paria) para el desarrollo de una fábrica de chocolate en
+              la ciudad. Se buscaba la consolidación entre la actividad
+              comercial con la producción Agro-Industrial cacaotera del país.
+              Esta actividad cacaotera es considerada de abolengo regional y de
+              tradición nacional, ya que el árbol de cacao es una planta
+              tropical, apreciada en períodos prehispánicos como alimento de los
+              dioses, moneda e incluso, evocadora de cierto poder místico.
+            </p>
+            <button class="project-button">
+              <a href="https://ansilliano.pb.studio/proyectodegrado">Ver Más</a>
+            </button>
+          </div>
+          <figure class="project-imageContainer">
+            <img
+              class="project-image"
+              src="https://i.imgur.com/rhnOlnt.jpg"
+              width="500"
+              alt="imagen de maqueta de la fábrica de chocolate"
+            />
+          </figure>
+        </article>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Proyecto de Grado - Arquitectura</h3>
+            <h5 class="project-location">Petare. Caracas - Venezuela</h5>
+            <h6 class="project-tools">
+              Autocad | Illustrator | Photoshop | Sketchup
+            </h6>
+            <p class="project-date">
+              <small><strong>Fecha:</strong> Diciembre 2018</small>
+            </p>
+            <p class="project-resume">
+              Este trabajo surge como interés personal en mejorar las
+              condiciones de vida para las personas que nacen en lugares menos
+              privilegiados, lo que trae como consecuencia la limitación de
+              oportunidades y que por lo tanto sus probabilidades de pertenecer
+              a alguna red delincuencial se multipliquen. Esto se vincula a su
+              vez con la importancia que existe en la actualidad de tener
+              espacios públicos en nuestra ciudad. Caracas es una ciudad de
+              contrastes, por lo que es necesario crear espacios que promuevan
+              la heterogeneidad entre sus habitantes y así mejorar las
+              condiciones de vida que actualmente posee.
+            </p>
+            <button class="project-button">
+              <a href="https://ansilliano.pb.studio/proyectodegrado">Ver Más</a>
+            </button>
+          </div>
+          <figure class="project-imageContainer">
+            <img
+              class="project-image"
+              src="https://i.imgur.com/2rY0A7E.jpg"
+              width="500"
+              alt="imagen de maqueta de la fábrica de chocolate"
+            />
+          </figure>
+        </article>
+      </div>
+    </section>
     <div class="container">
-      <h2>Portafolio (proyectos destacados)</h2>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Fábrica de Chocolate</h3>
-          <h5 class="project-location">Boleíta. Caracas - Venezuela</h5>
-          <h6 class="project-tools">
-            Autocad | Illustrator | Photoshop | Sketchup
-          </h6>
-          <p class="project-date">
-            <small><strong>Fecha:</strong> Julio 2018</small>
-          </p>
-          <p class="project-resume">
-            El objetivo era elaborar una propuesta con Denominación de Origen (Cacao de Paria) para el desarrollo de una
-            fábrica de chocolate en
-            la ciudad. Se buscaba la consolidación entre la actividad comercial
-            con la producción Agro-Industrial cacaotera del país. Esta actividad
-            cacaotera es considerada de abolengo regional y de tradición
-            nacional, ya que el árbol de cacao es una planta tropical, apreciada
-            en períodos prehispánicos como alimento de los dioses, moneda e
-            incluso, evocadora de cierto poder místico.
-          </p>
-          <button class="project-button">
-            <a href="https://ansilliano.pb.studio/proyectodegrado">Ver Más</a>
-          </button>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="https://i.imgur.com/rhnOlnt.jpg" width="500"
-            alt="imagen de maqueta de la fábrica de chocolate" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Proyecto de Grado - Arquitectura</h3>
-          <h5 class="project-location">Petare. Caracas - Venezuela</h5>
-          <h6 class="project-tools">
-            Autocad | Illustrator | Photoshop | Sketchup
-          </h6>
-          <p class="project-date">
-            <small><strong>Fecha:</strong> Diciembre 2018</small>
-          </p>
-          <p class="project-resume">
-            Este trabajo surge como interés personal en mejorar las condiciones
-            de vida para las personas que nacen en lugares menos privilegiados,
-            lo que trae como consecuencia la limitación de oportunidades y que
-            por lo tanto sus probabilidades de pertenecer a alguna red
-            delincuencial se multipliquen. Esto se vincula a su vez con la
-            importancia que existe en la actualidad de tener espacios públicos
-            en nuestra ciudad. Caracas es una ciudad de contrastes, por lo que
-            es necesario crear espacios que promuevan la heterogeneidad entre
-            sus habitantes y así mejorar las condiciones de vida que actualmente
-            posee.
-          </p>
-          <button class="project-button">
-            <a href="https://ansilliano.pb.studio/proyectodegrado">Ver Más</a>
-          </button>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="https://i.imgur.com/2rY0A7E.jpg" width="500"
-            alt="imagen de maqueta de la fábrica de chocolate" />
-        </figure>
-      </article>
-    </div>
-  </section>
-  <div class="container">
     <h2 id="experiencia" class="experience-list-title">Más sobre mi Experiencia</h2>
   </div>
-  <section class="experience-list">
+    <section class="experience-list">
     <div class="container">
       <article class="experience">
         <figure class="experience-imageContainer">
           <img class="experience-image" src="https://i.imgur.com/WECK015.jpg" width="500" alt="experiencia windsurf" />
         </figure>
         <div class="experience-details">
-          <h3 class="experience-title">Club de Windsurf: Wissib</h3>
+          <h3 class="experience-title">Club de Windsurf: <br> Wissib</h3>
           <p class="experience-description">
             Agrupación deportiva universitaria. Dedicada a crear cursos de
             windsurf principalmente en el Parque Nacional Morrocoy.
@@ -154,10 +167,7 @@
         <div class="experience-details">
           <h3 class="experience-title">Pe + arte</h3>
           <p class="experience-description">
-            Servicio comunitario que buscaba co
-            nocer el imaginario qu
-            e tienen los hab <br>
-            itantes de Petare, y cómo se mueven dentro del lugar.
+            Servicio comunitario que buscaba conocer el imaginario que tienen los habitantes de Petare, y cómo se mueven dentro del lugar.
           <p class="experience-location">Caracas - Venezuela</p>
           </p>
           <button class="experience-button">
@@ -183,7 +193,7 @@
       </article>
     </div>
   </section>
-  <section id="contacto" class="contact">
+    <!-- <section id="contacto" class="contact">
     <div class="container">
       <form action="/suscripcion/" class="form-email">
         <h3>¿Creamos algo juntos?</h3>
@@ -199,8 +209,8 @@
         <a href="https://github.com/ansilliano" class="social-link github"></a>
       </div>
     </div>
-  </section>
-  <footer class="footer">
+  </section> -->
+    <!-- <footer class="footer">
     <div class="container">
       <p>
         Curso de desarollo web online - Mayo 2020
@@ -210,7 +220,6 @@
         <p>Designed with ♥ by Angela Illiano</p>
       </div>
     </div>
-  </footer>
-</body>
-
+  </footer> -->
+  </body>
 </html>
