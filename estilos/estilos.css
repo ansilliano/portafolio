@@ -430,6 +430,9 @@ ul {
 }
 
 @media screen and (max-width: 1024px) {
+  .form-email {
+    margin-left: 12px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -523,7 +526,7 @@ ul {
 
   .experience-details {
     margin: -5em 1em 1em 1em;
-    margin-top: -5px;
+    margin-top: -50px;
   }
 
   .experience-list-title {
@@ -554,12 +557,28 @@ ul {
     font-size: 0.7em;
   }
 
+  .contact {
+    height: auto;
+    padding: 1em;
+    text-align: center;
+    display: block;
+  }
+
   .form-email {
     padding-left: 25px;
   }
 
+  .form-button {
+    display: initial;
+    height: 25px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
   .social {
     margin-right: 20px;
+    margin-top: 25px;
+    margin-bottom: 5px;
   }
 
   .footer-text {
@@ -570,6 +589,20 @@ ul {
   .footer div div {
     margin-right: 25px;
     font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 660px) {
+  .experience {
+    width: initial;
+  }
+
+  .experience-image {
+    width: 100%;
+  }
+
+  .experience-details {
+    margin-top: -70px;
+    margin-bottom: 16px;
   }
 }
 
