@@ -227,27 +227,62 @@
   </footer>
   <script>
     console.log('¡Hola mundo! Esta es mi primera línea en Js');
-    console.log();
 
-    cont ipad = window.matchMedia('screen and (max-width: 767px)';
-    const menu =  document.querySelector('.menu');
-    // console.log(menu);
-    const burguerButton = document.querySelector('#burger-menu');
-    // console.log(burguerButton);
+    // const ipad = window.matchMedia('screen and (max-width: 767px)')
+    // const menu =  document.querySelector('.menu');
+    // // console.log(menu);
+    // const burguerButton = document.querySelector('#burger-menu');
+    // // console.log(burguerButton);
 
-    burguerButton.addEventListener('click',  hideShow)
 
-    ipad.addListener( )
+    // ipad.addListener(validation)
 
-    function hideShow () {
-      if (menu.classList.contains('is-active')) {
-      menu.classList.remove('is-active');
+    // function validation (event) {
+    //   if (event.matches)
+    //   {
+    //    burguerButton.addEventListener('click',  hideShow)
+    //   } 
+    //   else 
+    //   {
+    //    burguerButton.removeEventListener('click',  hideShow)
+    //   }
+    // }
+
+    // function hideShow () {
+    //   if (menu.classList.contains('is-active')) {
+    //   menu.classList.remove('is-active');
+    //   }
+    //   else {
+    //   menu.classList.add('is-active');
+    //   }
+
+    // }
+
+    const menu = document.querySelector('.menu');
+    const menuButton = document.getElementById ('burger-menu');
+
+    const ipad = window.matchMedia ('screen and (max-width: 767px)');
+    ipad.addListener(validation);
+    menuButton.addEventListener('click', showHide);
+
+    function validation (event) {
+      if (event.matches){
+        menuButton.addEventListener('click', showHide);
       }
       else {
-      menu.classList.add('is-active');
+        menuButton.removeEventListener('click', showhice);
       }
-
     }
+    function showHide() {
+      if (menu.classList.contains('is-active')){
+        menu.classList.remove('is-active');
+      }
+      else {
+        menu.classList.add('is-active')
+      }
+    }
+    
+
 
   </script>
   </body>
