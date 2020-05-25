@@ -12,16 +12,19 @@
     <title>Angela Illiano</title>
   </head>
   <body>
+    <i class="icon-menu burguer-button" id="burger-menu"></i>
     <header class="header">
       <div class="container-header">
         <div class="container">
-          <figure class="logo">
-            <img
-              src="https://i.imgur.com/u0eZPRc.png"
-              height="40"
-              alt="Logo de Angela Illiano"
-            />
-          </figure>
+          <a href= "https://ansilliano.pb.studio/" target="_blank">
+            <figure class="logo">
+              <img
+                src="https://i.imgur.com/u0eZPRc.png"
+                height="40"
+                alt="Logo de Angela Illiano" 
+              />
+            </figure>
+          </a>
           <nav class="menu">
             <ol>
               <li>
@@ -38,7 +41,7 @@
         </div>
       </div>
     </header>
-    <!-- <section class="hero">
+    <section class="hero">
     <div class="container">
       <h1>
         ¡Hola! soy Angela Illiano.<br />Soy <strong>arquitecta</strong> y me
@@ -48,7 +51,7 @@
       </h1>
       <img class="hero-image" src="https://i.imgur.com/m1B2PFM.png" width="450" alt="imagen principal del sitio">
     </div>
-  </section> -->
+  </section>
     <section id="portafolio" class="portfolio">
       <div class="container">
         <h2 class="portfolio-h2">Portafolio (Proyectos Destacados)</h2>
@@ -140,7 +143,7 @@
           <p class="experience-location">Tucacas, El Yaque, Adícora, Lecherías - Venezuela</p>
           </p>
           <button class="experience-button">
-            <a href="#">Ver más</a>
+            <a href="https://www.instagram.com/wissib/?hl=es-la" target="_blank">Ver más</a>
           </button>
         </div>
       </article>
@@ -156,7 +159,7 @@
           <p class="experience-location">Caracas - Venezuela</p>
           </p>
           <button class="experience-button">
-            <a href="https://imgur.com/a/hgwEW2Q">Ver más</a>
+            <a href="https://imgur.com/a/hgwEW2Q" target="_blank">Ver más</a>
           </button>
         </div>
       </article>
@@ -171,7 +174,7 @@
           <p class="experience-location">Caracas - Venezuela</p>
           </p>
           <button class="experience-button">
-            <a href="https://drive.google.com/open?id=0BzpAM7M5BR9gZndHWUFPZGFPX2c">Ver más</a>
+            <a href="https://drive.google.com/open?id=0BzpAM7M5BR9gZndHWUFPZGFPX2c" target="_blank">Ver más</a>
           </button>
         </div>
       </article>
@@ -187,7 +190,7 @@
           <p class="experience-location">Caracas - Venezuela</p>
           </p>
           <button class="experience-button">
-            <a href="https://imgur.com/a/DqGgc0Y">Ver más</a>
+            <a href="https://imgur.com/a/DqGgc0Y" target="_blank">Ver más</a>
           </button>
         </div>
       </article>
@@ -203,11 +206,11 @@
         </button>
       </form>
       <div class="social">
-        <a href="https://dribbble.com/ansilliano" class="social-link dribble"></a>
-        <a href="https://twitter.com/AnsIlliano" class="social-link twitter"></a>
-        <a href="https://www.facebook.com/ansofill" class="social-link facebook"></a>
-        <a href="https://www.instagram.com/ansilliano/" class="social-link instagram"></a>
-        <a href="https://github.com/ansilliano" class="social-link github"></a>
+        <a href="https://dribbble.com/ansilliano" class="social-link dribble" target="_blank"></a>
+        <a href="https://twitter.com/AnsIlliano" class="social-link twitter" target="_blank"></a>
+        <a href="https://www.facebook.com/ansofill" class="social-link facebook" target="_blank"></a>
+        <a href="https://www.instagram.com/ansilliano/" class="social-link instagram" target="_blank"></a>
+        <a href="https://github.com/ansilliano" class="social-link github" target="_blank"></a>
       </div>
     </div>
   </section>
@@ -222,5 +225,30 @@
       </div>
     </div>
   </footer>
+  <script>
+    console.log('¡Hola mundo! Esta es mi primera línea en Js');
+    console.log();
+
+    cont ipad = window.matchMedia('screen and (max-width: 767px)';
+    const menu =  document.querySelector('.menu');
+    // console.log(menu);
+    const burguerButton = document.querySelector('#burger-menu');
+    // console.log(burguerButton);
+
+    burguerButton.addEventListener('click',  hideShow)
+
+    ipad.addListener( )
+
+    function hideShow () {
+      if (menu.classList.contains('is-active')) {
+      menu.classList.remove('is-active');
+      }
+      else {
+      menu.classList.add('is-active');
+      }
+
+    }
+
+  </script>
   </body>
 </html>

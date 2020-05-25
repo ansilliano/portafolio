@@ -1,17 +1,56 @@
-/* selector de etiqueta header - section - article - nav */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/");
+  src: url("../fonts/icomoon.eot") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf") format("truetype"),
+    url("../fonts/icomoon.woff") format("woff"),
+    url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
-/* header{
-  background-color: gray;
-} */
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-/* selector descendente
-body - header - div - nav - ol - li - a */
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-/* selector de clase
-.link */
+.icon-menu:before {
+  content: "\e900";
+}
 
-/* selector de id
-#portafolio */
+.burguer-button {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(253, 176, 19, 0.9);
+  border-radius: 50%;
+  /* display: none; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  color: black;
+  top: 4%;
+  left: 3%;
+  transition: .4s;
+}
+
+.menu.is-active {
+  left: 0;
+
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -56,7 +95,7 @@ h2 {
 }
 
 .hero {
-  height: 300px;
+  height: auto;
   /* background-image: url(../imagenes/imgprincipal.png); */
   background-color: rgb(56, 56, 56);
   /* background-size: 500px 300px; */
@@ -97,6 +136,10 @@ ul {
   /* box-shadow: 0px 8px 16px 5px rgba(0, 0, 0, 0.2); */
   justify-content: space-between;
   flex-wrap: wrap;
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .header ol {
@@ -231,6 +274,7 @@ ul {
 
 .menu {
   height: inherit;
+  transition: 0.35s;
 }
 
 .experience-list-title {
@@ -433,20 +477,42 @@ ul {
   .form-email {
     margin-left: 12px;
   }
+
+  .hero-image {
+    width: 300px; 
+  }
+
+  .hero div h1 {
+    margin-left: 25px;
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .burguer-button {
+    display: block;
+    display: flex;
+  }
+
+  .link {
+    font-size: 2em;
+  }
+
   .header {
     display: block;
     height: auto;
+    position: unset;
+    /* box-shadow: 0px 8px 16px 5px rgba(0, 0, 0, 0.2); */
   }
 
   .header ol {
     display: block;
+    height: auto;
   }
 
   .header ol li {
     height: 50px;
+    margin: 20% 0;
   }
 
   .header a {
@@ -455,14 +521,52 @@ ul {
 
   .header .logo {
     text-align: center;
+    margin-top: 3%;
+  }
+
+  .menu {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .hero {
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: inset 0 5px 20px -6px black;
+  }
+
+  .hero div h1 {
+    font-size: 1.4em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: unset;
+  }
+
+  .hero-image {
+    margin: 10px 0;
   }
 
   .portfolio-h2 {
-    margin-left: 1.3em;
-    font-size: 1.2em;
+    /* margin-left: 1.3em; */
+    font-size: 20px;
     /* font-family: "Montserrat"; */
     /* text-align: center; */
     font-weight: 500;
+    text-align: center;
+    font-weight: 600;
+    /* font-size: 1.2em; */
+    margin-top: 4%;
   }
 
   .project {
@@ -493,62 +597,55 @@ ul {
     font-size: 0.7em;
     text-align: initial;
   }
-
   .project-date {
     font-size: 1em;
     text-align: initial;
   }
-
   .project-resume {
     font-size: 0.9em;
     text-align: initial;
   }
-
   .project-button {
     font-size: 0.8em;
     width: 90px;
   }
-
-  /* .experience {
-    margin: 1.2em;
-  } */
   .experience-list-title {
-    margin-left: 24px;
+    /* margin-left: 1.3em; */
+    font-size: 22px;
+    /* font-family: "Montserrat"; */
+    /* text-align: center; */
+    font-weight: 500;
+    text-align: center;
+    font-weight: 600;
+    /* font-size: 1.2em; */
+    margin-top: 4%;
   }
-
   .experience-list {
     margin: 1.2em;
   }
-
   .experience-image {
     height: 240px;
   }
-
   .experience-details {
     margin: -5em 1em 1em 1em;
     margin-top: -50px;
   }
-
   .experience-list-title {
     margin-left: 1.3em;
-    font-size: 1.2em;
+    font-size: 20px;
     /* font-family: "Montserrat"; */
     /* text-align: center; */
     font-weight: 500;
   }
-
   .experience-title {
     font-size: 1.2em;
   }
-
   .experience-description {
     font-size: 0.8em;
   }
-
   .experience-location {
     font-size: 0.6em;
   }
-
   .experience-button {
     margin-top: 20px;
     margin-bottom: 0;
@@ -556,50 +653,44 @@ ul {
     width: 90px;
     font-size: 0.7em;
   }
-
   .contact {
     height: auto;
     padding: 1em;
     text-align: center;
     display: block;
   }
-
   .form-email {
     padding-left: 25px;
   }
-
   .form-button {
     display: initial;
     height: 25px;
     margin: auto;
     margin-top: 20px;
   }
-
   .social {
     margin-right: 20px;
     margin-top: 25px;
     margin-bottom: 5px;
   }
-
   .footer-text {
     margin-left: 25px;
     font-size: 0.8em;
   }
-
   .footer div div {
     margin-right: 25px;
     font-size: 0.8em;
   }
 }
 @media screen and (max-width: 660px) {
+  
+
   .experience {
     width: initial;
   }
-
   .experience-image {
     width: 100%;
   }
-
   .experience-details {
     margin-top: -70px;
     margin-bottom: 16px;
@@ -607,56 +698,77 @@ ul {
 }
 
 @media screen and (max-width: 480px) {
+
+.burguer-button {
+  height: 30px;
+  width: 30px;
+  font-size: 0.9em;
+  top: 4%;
+  left: 3%;
+}
+
+  .header ol li {
+    height: 40px;
+  }
+  .hero div h1 {
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .hero-image {
+    margin-bottom: 15px;
+    width: 60%;
+  }
   .experience {
     width: initial;
   }
-
   .experience-image {
     width: 100%;
     height: 210px;
   }
-
   .project-title {
     margin-top: -7px;
   }
-
   .contact {
     height: auto;
     padding: 1em;
     text-align: center;
     display: block;
   }
-
   .form-button {
     display: initial;
     height: 25px;
     margin: auto;
     margin-top: 20px;
   }
-
   .social {
     padding: 30px 0 10px 0;
     margin-right: initial;
   }
-
   .social-link {
     width: 35px;
     height: 35px;
     background-size: 35px;
   }
-
   .form-email {
     margin-right: initial;
     padding-left: initial;
   }
-
   .footer {
     text-align: center;
     justify-content: center;
   }
 }
-
 @media screen and (max-width: 320px) {
+
+  .hero div h1 {
+    font-size: 0.9em;
+    paddi
+    ng: 0 20px;
+  }
+  .link {
+    font-size: 1.3em;
+  }
   .portfolio-h2 {
     font-size: 1em;
     /* margin-top: 1.2em;
@@ -664,45 +776,36 @@ ul {
     margin: 1.4em 1em 0em 1em;
     text-align: center;
   }
-
   .project {
     padding: 15px;
   }
-
   .project-title {
     font-size: 1.1em;
     text-align: initial;
   }
-
   .project-location,
   .project-tools {
     font-size: 0.6em;
     text-align: initial;
   }
-
   .project-date {
     font-size: 0.8em;
     text-align: initial;
   }
-
   .project-resume {
     font-size: 0.7em;
     text-align: initial;
   }
-
   .project-button {
     font-size: 0.65em;
     width: 80px;
   }
-
   .experience-details {
     margin: -5em 1em 1em 1em;
   }
-
   .experience-image {
     height: 180px;
   }
-
   .experience-list-title {
     font-size: 1em;
     /* margin-top: 3em;
@@ -710,19 +813,15 @@ ul {
     text-align: center;
     margin: 1.7em 1em -0.2em 1em;
   }
-
   .experience-title {
     font-size: 1em;
   }
-
   .experience-description {
     font-size: 0.7em;
   }
-
   .experience-location {
     font-size: 0.5em;
   }
-
   .experience-button {
     margin-top: 20px;
     margin-bottom: 0;
@@ -730,23 +829,19 @@ ul {
     width: 80px;
     font-size: 0.6em;
   }
-
   .social-link {
     width: 25px;
     height: 25px;
     background-size: 25px;
   }
-
   .footer-text {
     margin-left: initial;
     margin-bottom: -5px;
     font-size: 0.8em;
   }
-
   .footer img {
     height: 20px;
   }
-
   .footer div div p {
     margin-top: 20px;
     margin-bottom: 15px;
