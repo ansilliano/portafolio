@@ -258,19 +258,21 @@
 
     // }
 
+
+
     const menu = document.querySelector('.menu');
     const menuButton = document.getElementById ('burger-menu');
 
     const ipad = window.matchMedia ('screen and (max-width: 767px)');
     ipad.addListener(validation);
-    menuButton.addEventListener('click', showHide);
+    menuButton.addEventListener('touchstart', showHide);
 
     function validation (event) {
       if (event.matches){
-        menuButton.addEventListener('click', showHide);
+        menuButton.addEventListener('touchstart', showHide);
       }
       else {
-        menuButton.removeEventListener('click', showhice);
+        menuButton.removeEventListener('touchstart', showhice);
       }
     }
     function showHide() {
